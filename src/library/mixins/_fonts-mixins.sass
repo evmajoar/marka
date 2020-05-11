@@ -1,0 +1,10 @@
+@import "../variables.sass"
+
+@mixin fontFace($name, $weight, $style: normal)
+  @font-face
+    font-family: $name
+    font-display: swap
+    font-style: $style
+    font-weight: $weight
+    src: url('#{$fontDir}#{$name}/#{$name}-Light.woff2') format('woff2'),
+    url( '#{$fontDir}#{$name}/#{$name}-Light.woff') format('woff')
